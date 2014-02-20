@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">I\'m Blocking You!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_section1">Blocked Employees</string>
+    <string name="title_section2">Wiki</string>
+    <string name="title_section3">Section 3</string>
+    <string name="add_blocked_employee">Add Blocked Employee</string>
+    <string name="blocked_employees_label_text">I am currently blocking:</string>
+    <string name="do_blocking_text">Block!</string>
+    <string name="do_unblock_text">Unblock Now</string>
+    <string name="unblock_action_text">Unblock Now!</string>
+    <string name="employee_cars_view_description">Employee Cars</string>
+
+</resources>
