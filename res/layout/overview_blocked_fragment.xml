@@ -11,7 +11,8 @@
     <TextView
         android:id="@+id/blocked_list_section_label"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="@string/blocked_employees_label_text" />
 
     <LinearLayout
         android:id="@+id/blocked_linear_layout"
@@ -20,14 +21,7 @@
         android:layout_alignLeft="@+id/blocked_list_section_label"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/blocked_list_section_label"
-        android:layout_marginTop="16dp"
         android:orientation="vertical" >
-
-        <ListView
-            android:id="@+id/blocked_employees_list"
-            android:layout_width="wrap_content"
-            android:layout_height="185dp" >
-        </ListView>
 
         <Button
             android:id="@+id/add_blocked_button"
@@ -41,7 +35,7 @@
             android:columnCount="1" >
 
             <Button
-                android:id="@+id/button1"
+                android:id="@+id/block_action_button"
                 android:layout_width="wrap_content"
                 android:layout_gravity="left"
                 android:text="@string/do_blocking_text" />
@@ -59,13 +53,12 @@
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/blocked_employees_list_label"
+    <ListView
+        android:id="@+id/blocked_employees_list"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/blocked_list_section_label"
-        android:layout_alignTop="@+id/blocked_list_section_label"
-        android:text="@string/blocked_employees_label_text"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/blocked_linear_layout"
+        android:layout_below="@+id/blocked_linear_layout" >
+    </ListView>
 
 </RelativeLayout>
