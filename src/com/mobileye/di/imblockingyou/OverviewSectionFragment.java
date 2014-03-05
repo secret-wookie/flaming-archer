@@ -1,7 +1,5 @@
 package com.mobileye.di.imblockingyou;
 
-import com.mobileye.di.imblockingyou.OverviewActivity.SectionsPagerAdapter;
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -23,17 +21,19 @@ public class OverviewSectionFragment extends Fragment {
 	 * fragment.
 	 */
 	public OverviewSectionFragment() {
-
 	}
+	
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		View rootView = inflater.inflate(R.layout.overview_blocked_fragment, container, false);
 		
-		Button button = (Button) rootView.findViewById(R.id.add_blocked_button);		
+/*		Button button = (Button) rootView.findViewById(R.id.add_blocked_button);		
 		button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Toast.makeText(v.getContext(), "add",  Toast.LENGTH_LONG).show();
+            	Intent i = ;
+            	Context ctx = v.getContext();
+            	ctx.startActivity(i);
             }
         });
 		button = (Button) rootView.findViewById(R.id.unblock_action_button);
@@ -49,7 +49,7 @@ public class OverviewSectionFragment extends Fragment {
                 Toast.makeText(v.getContext(), "block",  Toast.LENGTH_LONG).show();
             }
         });
-		
+*/		
 		return rootView;
 	}
 }

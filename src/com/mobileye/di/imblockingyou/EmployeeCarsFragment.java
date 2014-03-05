@@ -66,7 +66,6 @@ public class EmployeeCarsFragment extends Fragment {
 		return res;
 	}
 
-
 	private InputStream getCurrentList() {
 		return getResources().openRawResource(R.raw.initial_employee_list);
 	}

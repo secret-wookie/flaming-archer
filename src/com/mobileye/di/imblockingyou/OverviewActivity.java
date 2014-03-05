@@ -4,16 +4,16 @@ import java.util.Locale;
 
 import android.app.ActionBar;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.app.NavUtils;
 import android.support.v4.view.ViewPager;
-import android.view.Gravity;
 import android.view.Menu;
-import android.view.MenuItem;
+import android.view.View;
+
 
 public class OverviewActivity extends FragmentActivity implements
 		ActionBar.TabListener {
@@ -96,6 +96,17 @@ public class OverviewActivity extends FragmentActivity implements
 	public void onTabReselected(ActionBar.Tab tab,
 			FragmentTransaction fragmentTransaction) {
 	}
+	
+	public void addBlockedEmployee(View v) {
+		Intent i = new Intent(this, AddBlockedEmployeeActivity.class);
+		startActivity(i);
+	}
+
+	public void blockEmployees(View v) {
+	}
+
+	public void unblockAll(View v) {
+	}
 
 	/**
 	 * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
@@ -147,5 +158,4 @@ public class OverviewActivity extends FragmentActivity implements
 			return null;
 		}
 	}
-
 }
